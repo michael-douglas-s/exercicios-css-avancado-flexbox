@@ -1,0 +1,55 @@
+body {
+  background-color: var(--background-color);
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
+
+.cartao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.conteudo {
+  background-color: var(--advice-card-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.conteudo .informacao1 {
+  color: var(--advice-dice-color);
+  font-size: 14px;
+  margin-top: 30px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.conteudo .informacao2 {
+  color: var(--text-color);
+  padding: 30px;
+  text-align: center;
+  font-size: 23px;
+}
+
+.clique {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--advice-dice-color);
+  transform: translatey(50%);
+}
+
+.clique:hover {
+  cursor: pointer;
+  color: #53ffab;
+  box-shadow: 0 5px 15px var(--advice-dice-color);
+  transform: translateY(50%) scale(1.1);
+  transform-origin: center bottom;
+}
